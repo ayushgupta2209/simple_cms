@@ -3,6 +3,13 @@
 
 <%= 1+1 %>
 <br />
-<% 3.times do%>
- <%= "xxx" %>
+<% @array.each do |n| %>
+ <%= n %>
+ <br />
+ 
 <% end %>
+ ID: <%= params[:id] %> <br/>
+ ID: <%= @id %> <br/>
+ Page: <%= @page %> 
+ <hr />
+ <%= params.inspect %>

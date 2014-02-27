@@ -5,11 +5,13 @@ class DemoController < ApplicationController
 	#can use any on of the three
 	#render(:template => 'demo/hello')
 	#render('demo/hello')
-	render('hello')
   end
   
   def hello
-	render('index')
+	#render('index')
+	@array = [1,2,3,4,5]
+	@id = params['id']
+	@page = params[:page]
   end
   
   def other_hello
